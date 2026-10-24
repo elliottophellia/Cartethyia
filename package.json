@@ -66,8 +66,7 @@
     "test-db:reset": "docker compose -f docker-compose.test.yml down -v && docker compose -f docker-compose.test.yml up -d --wait postgres-test",
     "dashboard:build": "bun run --cwd dashboard build",
     "dashboard:typecheck": "bun run --cwd dashboard typecheck",
-    "check:migrations": "bun run scripts/test/check-migrations.ts",
-    "install": "bun run scripts/install/install.ts"
+    "check:migrations": "bun run scripts/test/check-migrations.ts"
   },
   "dependencies": {
     "drizzle-orm": "0.45.2",
